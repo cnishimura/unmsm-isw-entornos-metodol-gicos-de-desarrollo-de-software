@@ -62,3 +62,8 @@ Para contribuir:
 Este proyecto es desarrollado por los siguientes miembros:
 
 * (carlos.nishimura@unmsm.edu.pe) (Carlos Antonio Nishimura Castro)
+
+## 👥 Tutor
+
+* (wilson.julca@unmsm.edu.pe) (Wilson Julca)
+
