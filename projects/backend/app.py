@@ -59,8 +59,10 @@ def clasificar_comentario(data: CommentRequest):
             detail="El campo 'text' no puede estar vacío o ser null."
         )
     try:
-        logger.info(f"Recibido texto para clasificar: {data.text}")
-        resultado = classifier(data.text)
+        #Recibe el dato y luego con el modelo predice la clasificación
+        texto = data.text.lower()  # <--- Aquí se convierte a minúsculas
+        logger.info(f"Recibido texto para clasificar: {texto}")
+        resultado = classifier(texto)
         etiqueta = resultado[0]["label"]
         score = resultado[0]["score"]
         logger.info(f"Clasificación: {etiqueta} con confianza {score}")
